@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody Mart - Music Instrument Store</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #05182C, #F17884);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: slideIn 1s ease-in-out;
+        }
+        header p {
+            font-size: 1.2em;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        .greeting {
+            background: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .instrument {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .instrument:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .instrument img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .instrument h2 {
+            margin: 15px 0 10px;
+            font-size: 1.5em;
+            color: #F17884;
+        }
+        .instrument p {
+            font-size: 1em;
+            color: #666;
+        }
+        .instrument a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #F17884;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .instrument a:hover {
+            background: #ff9a44;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Melody Mart</h1>
+        <p>Your one-stop shop for musical instruments</p>
+    </header>
+
+    <div class="greeting">
+        <h2>Hello Music Lovers! 🎵</h2>
+        <p>Explore our wide range of musical instruments and find the perfect one for you.</p>
+    </div>
+
+    <div class="container">
+        <!-- Instrument 1 -->
+        <div class="instrument">
+            <img src="guitar1.jpg" alt="Guitar" width="300" height="300">
+            <h2>Acoustic Guitar</h2>
+            <p>Perfect for beginners and professionals alike. Made with high-quality wood for rich sound.</p>
+            <a href="guitar.html">View Details</a>
+        </div>
+
+        <!-- Instrument 2 -->
+        <div class="instrument">
+            <img src="https://i.pinimg.com/736x/c3/5f/9d/c35f9dd98a35191ce87715b3bfd46ff3.jpg" alt="Piano" width="300" height="300">
+            <h2>Digital Piano</h2>
+            <p>88-key digital piano with weighted keys for an authentic playing experience.</p>
+            <a href="piano.html">View Details</a>
+        </div>
+
+        <!-- Instrument 3 -->
+        <div class="instrument">
+            <img src="voilin.jpg" alt="Violin" width="300" height="300">
+            <h2>Violin</h2>
+            <p>Handcrafted violin with a warm and resonant tone. Ideal for classical music.</p>
+            <a href="violin.html">View Details</a>
+        </div>
+
+        <!-- Instrument 4 -->
+        <div class="instrument">
+            <img src="https://i.pinimg.com/736x/37/99/05/3799059e91622d09402b9663a6054d2a.jpg" alt="Drums" width="300" height="300">
+            <h2>Drum Set</h2>
+            <p>Complete drum set with cymbals, snare, and bass drum. Perfect for rock and jazz.</p>
+            <a href="drums.html">View Details</a>
+        </div>
+
+        <!-- Instrument 5 -->
+        <div class="instrument">
+            <img src="https://i.pinimg.com/736x/47/df/9e/47df9e786381f2edb79a8aa7b96330aa.jpg" alt="Saxophone" width="300" height="300">
+            <h2>Saxophone</h2>
+            <p>Professional-grade saxophone with a rich and smooth tone. Ideal for jazz enthusiasts.</p>
+            <a href="saxophone.html">View Details</a>
+        </div>
+
+        <!-- Add more instruments as needed -->
+    </div>
+</body>
+</html>

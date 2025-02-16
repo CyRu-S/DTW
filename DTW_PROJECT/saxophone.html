@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acoustic Guitar - Melody Mart</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #05182C, #F17884);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: slideIn 1s ease-in-out;
+        }
+        .product-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product-image, .product-info {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product-image {
+            flex: 1;
+            max-width: 400px;
+        }
+        .product-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product-info {
+            flex: 2;
+            max-width: 600px;
+        }
+        .product-info h2 {
+            color: #F17884;
+        }
+        .product-info p {
+            color: #666;
+        }
+        .product-info video {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .buy-now {
+            background: #F17884;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .buy-now:hover {
+            background: #ff9a44;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        video {
+          max-width: 100%;
+          height: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Saxophone</h1>
+    </header>
+
+    <div class="product-details">
+        <div class="product-image">
+            <img src="https://w0.peakpx.com/wallpaper/271/699/HD-wallpaper-saxophone-artist-instrument-music-musical-musician-phone-sax.jpg" alt="Saxophone" width="600" height="600">
+        </div>
+        <div class="product-info">
+            <h2>Saxophone</h2>
+            <p>Perfect for beginners and professionals alike. Made with high-quality wood for rich sound.</p>
+            <p><strong>Price:</strong> $799.99</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/biyTBvaOn1M?si=Wv-tHigfLBOTv-NL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
